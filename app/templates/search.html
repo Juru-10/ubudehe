@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{% block content %}
+<div class="container">
+  <div class="jumbotron">
+    <div class="row"style="text-align:center;background-color:black;color:white;top:100px;padding:30px">
+      <div class= "col-md-2"> </div>
+        <div class="col-md-8">
+          {{wtf.quick_form(search_form)}}
+        </div>
+      <div clas="col-md-2"> </div>
+    </div>
+  </div>
+</div>
+<div class="row"style='text-align:center;'>
+  <h2 style='font-style:italic'>Citizen</h2>
+    <h3>{{citizen.fname}} {{citizen.lname}}</h3>
+    <h2>Ubudehe:{{citizen.category}}</h2>
+</div>
+<footer style='background-color:black;color:white;text-align:center;margin-top:300px'>
+  <span style='margin:10px;''><p>Copyright(c)2019</p> <h5>Juru-10</h5></span>
+</footer>
+
+{% endblock%}

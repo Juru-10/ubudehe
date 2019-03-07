@@ -14,7 +14,8 @@ class Citizen(db.Model):
     id = db.Column(db.Integer,primary_key = True)
     fname = db.Column(db.String(255))
     lname = db.Column(db.String(255))
-    ID = db.Column(db.Integer)
+    ID = db.Column(db.String(255))
+    category = db.Column(db.Integer)
     status = db.Column(db.String(255))
     insurance  = db.Column(db.String(255))
 
