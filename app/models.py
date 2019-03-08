@@ -48,34 +48,3 @@ class User(UserMixin,db.Model):
 
     def __repr__(self):
         return f'User {self.username}'
-
-class Searched:
-
-    all_searched = []
-
-    def __init__(self,fname,lname,ID,status,insurance):
-        self.fname = fname
-        self.lname = lname
-        self.ID = ID
-        self.status = status
-        self.insurance = insurance
-
-
-    def save_searched(self):
-        Searched.all_searched.append(self)
-
-
-    @classmethod
-    def clear_searched(cls):
-        Searched.all_searched.clear()
-
-    @classmethod
-    def get_searched(cls,id):
-
-        response = []
-
-        for searched in cls.all_searched:
-            if searched.ID == ID:
-                response.append(review)
-
-        return response

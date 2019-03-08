@@ -1,3 +1,51 @@
-{%block content%}
-<h1>Rosy</h1>
-{%endblock%}
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+<!-- Styles block -->
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+<!-- Content block -->
+{% block content %}
+<body style="background-image:url('http://minaloc.gov.rw/uploads/pics/Dzxw2teXgAEcHzh.jpg');background-size: cover">
+
+  <div class="container" style="text-align:center;background-color:darkcyan;">
+    <div class="panel panel-heading" style="height">
+      <h1 style="text-align:center;margin-bottom:80px; color:black">Ubudehe Info Provider</h1>
+    </div>
+    <div class="well">
+      <h2><strong>About-us</strong></h2>
+      <h3><strong>Mission</strong></h3>
+      <p>To assume the leading role in improving capacity to use information for evidence based decision-making by
+        coordinating national effort to collect and archive reliable data, to analyze, document and disseminate data within an integrated and sustainable framework.
+      </p>
+      <h3><strong>Vision statement</strong></h3>
+      <p>a.developing the decentralization policies throught all sectors</p>
+
+      <p>b.offering the highly needed services near people in Rwanda;</p>
+
+      <p>c.developing and promoting a sector policy for social affairs;</p>
+
+      <p>c.collaborating with other government institutions to use our database into their specific programs at local level;</p>
+
+      <p>d.developing a country through the time management;</p>
+
+      <p>e.Reducing the high death rate caused by don't knowing their identity of family-representer:</p>
+      <p>f.submitting periodical and annual reports to our users on the impact of strategies, programs and projects on the development of the country;</p>
+      <p>g.To develop and sustain a culture of excellence in health,education and good governance.</p>
+
+        <body style="image:url(https://slideplayer.com/slide/9283518/28/images/3/UBUDEHE+CATEGORIZATION+KEY+DATA+BY+PROVINCE.jpg")>
+    </div>
+    </div>
+    <div class="well">
+      <p>
+      </p>
+    </div>
+  <footer style='background-color:black;color:white;text-align:center;margin-bottom: -80px'>
+    <span style='margin:10px;'><p>Copyright(c)2019</p> <h5>Rwanda</h5></span>
+  </footer>
+  {% endblock%}
+</body>

@@ -10,11 +10,21 @@
 
 <!-- Content block -->
 {% block content %}
+<head>
+  <style media="screen">
+    @media only screen and (max-width:480px){
+      body nav a{
+        margin-top:-(80px);
+        margin-left:-(150px);
+      }
+    }
+  </style>
+</head>
 <body style="background-image:url('https://media.istockphoto.com/vectors/water-bubbles-vector-illustration-abstract-bubbles-white-transparent-vector-id947316044?k=6&m=947316044&s=612x612&w=0&h=VHzgeLJ_QTHO4_6g_W5eLnsBzwr7wSm3oEOaLhYOYKA=');background-size: cover">
 
   <div class="container" style="text-align:center;background-color:white;">
-    <div class="panel panel-heading" style="height">
-      <h1 style="text-align:center;margin-bottom:80px; color:black">Ubudehe Info Provider</h1>
+    <div class="panel panel-heading" style="height;border:solid black 1px;">
+      <h1 style="text-align:center;margin-bottom:80px; color:black;">Ubudehe Info Provider</h1>
     </div>
     <div class="well">
       <h2><strong>Ubudehe</strong></h2>

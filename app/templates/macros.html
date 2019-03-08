@@ -1,0 +1,9 @@
+{%macro displaySearched(all_searched)%}
+{% for citizen in all_searched %}
+  <div class="">
+    <li class="text-center">
+      <h4>{{ citizen.fname}} {{citizen.lname}}</h4> <h5>Ubudehe:{{citizen.category}}</h5>
+    </li>
+  </div>
+{% endfor %}
+{%endmacro%}
